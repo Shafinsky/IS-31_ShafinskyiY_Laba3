@@ -1,0 +1,286 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+
+header 
+{
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+main
+{
+    background-color: rgb(255,255,255);
+}
+
+header h2 
+{
+    background-color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.skills 
+{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.skill-item 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    background-color: #333;
+    width: 120px;
+    height: 100px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.skill-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+
+.guarantee {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.guarantee h3 {
+    font-size: 1.8em;
+    color: white;
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+.guarantee .highlight {
+    color: #00b0ff;
+    font-size: 2em;
+}
+
+.guarantee-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.guarantee-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #ff6600;
+}
+
+.guarantee-info {
+    display: flex;
+    gap: 40px;
+    max-width: 700px;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.guarantee-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.guarantee-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.checkmark {
+    font-size: 1.5em;
+    color: #00ff00;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.guarantee-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.guarantee-info strong {
+    color: #ff6600;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .guarantee-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .guarantee-info {
+        flex-direction: column;
+    }
+}
+
+.course-info {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.course-info h2 {
+    font-size: 1.5em;
+    color: #ff6600;
+    margin-bottom: 5px;
+}
+
+.course-info h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.course-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.course-image img {
+    width: 220px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.course-details {
+    flex: 1;
+    max-width: 700px;
+}
+
+.course-details ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.course-details li {
+    margin: 20px 0;
+    position: relative;
+    padding-left: 30px;
+}
+
+.course-details li::before {
+    content: '•';
+    color: #ff6600;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+
+@media (max-width: 768px) {
+    .course-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .course-image img {
+        margin: 0 0 20px 0;
+        width: 180px;
+    }
+
+    .course-details {
+        max-width: 100%;
+    }
+
+    .course-info h2 {
+        font-size: 1.3em;
+    }
+
+    .course-info h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-info h2 {
+        font-size: 1.2em;
+    }
+
+    .course-info h1 {
+        font-size: 1.5em;
+    }
+
+    .course-details ul {
+        font-size: 1em;
+    }
+
+    .course-image img {
+        width: 150px;
+    }
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    margin-top: 30px;
+    font-size: 14px;
+    color: grey;
+    text-align: left;
+}
+
+.social-logos {
+    display: flex;
+    gap: 15px;
+}
+
+.social-logo {
+    width: 50px;
+    height: auto;
+    transition: filter 0.3s;
+}
+
+.social-logo:hover {
+    filter: brightness(4);
+}

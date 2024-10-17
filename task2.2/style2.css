@@ -1,0 +1,57 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+table {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+
+table, td {
+    border: 2px solid black; 
+}
+
+.rubber-table-layout {
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
+
+
+h2.element_description {    
+    text-align: center;
+    color: black;
+}
+
+.element_1_6 {
+    height: 162px;
+    background-color: yellow;
+    width: 35px;
+}
+
+.element2,
+.element4,
+.element_3_5 {
+    width: 70px;    
+    height: 600px;
+}
+
+.element2 {
+    background-color: blue;
+}
+
+.element4 {
+    background-color: white;
+}
+
+.element_3_5 {
+    background-color: rgb(235, 62, 19);
+}
+
+.spacer {
+    width: 20px;
+    background-color: transparent;
+    border: none;
+}
